@@ -9,9 +9,6 @@
   <img src="https://github.com/user-attachments/assets/0a4dee24-f0c4-4827-9b4c-80fb254c5c38" width="49%" alt="Commercial Integrity" />
 </p>
 
-<img width="1277" height="723" alt="image" src="" />
-
-
 ## Deep Dive: Critical Thinking & Problem Solving Log
 
 A dashboard is only as reliable as the logical foundation beneath it. Throughout this project, my core philosophy was to **never blindly trust default BI behaviors**. I deliberately challenged the tool's mechanics and applied rigorous supply chain operations logic to ensure the data accurately reflected physical realities. 
