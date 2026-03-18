@@ -64,3 +64,23 @@ BI tools are powerful, but their default settings often defy business logic. My 
 * **The Critical Thought:** Systemic failures are rarely truly global; they are usually localized bottlenecks masquerading as global issues due to aggregated data.
 * **The Technical Fix:** I deployed an AI-driven Decomposition Tree, anchoring it with a strict `Late_delivery_risk = 1` filter to isolate only the failures. I then systematically drilled down: from 98,977 total late orders -> Shipping Mode -> Region -> Product.
 * **The Impact:** The tree mathematically proved the failure wasn't global. Over 41% of the delays were isolated entirely within the **Standard Class** routing, heavily anchored in the **Central America** region. This pivoted the hypothetical business strategy from "our whole system is broken" to an actionable directive: "audit Central American Standard Class freight vendors."
+
+<img width="1029" height="738" alt="image" src="https://github.com/user-attachments/assets/ccba1068-d1b5-4dec-a348-7d3490f22e3a" />
+
+##  Strategic Recommendations (Action Plan)
+
+Finding the root cause is only half the job. Based on the dashboard data, here is my practical action plan to fix the delivery delays and stop the money leaks:
+
+### 1. Fixing the Late Deliveries (Central America - Standard Class)
+*The Data: Over 41% of all late deliveries come from the "Standard Class" shipping route to Central America.*
+
+**My Recommendations:**
+* **Action 1 - Hold the Vendor Accountable:** The problem is isolated to this specific route. We need to set up a meeting with the shipping vendor handling Central America right away. We must find out if they lack delivery trucks or if packages are just stuck at customs, and force them to meet the delivery deadlines.
+* **Action 2 - The Quick Backup Plan:** While we negotiate with the vendor, we still need to keep our customers happy. I suggest setting up an automatic rule: If a customer in Central America buys a bulky item (like sporting goods) and chooses "Standard" shipping, we automatically upgrade them to "Second Class" (faster shipping). We will lose a few dollars on shipping fees, but we deliver on time and save the customer relationship.
+
+### 2. Stopping the Money Leaks (Fraud and Cancellations)
+*The Data: Looking at the bottom of the Funnel Chart, we lost about 4,000 orders to "Suspected Fraud" and another 4,000 because "Customers Canceled".*
+
+**My Recommendations:**
+* **Action 1 - Stop Fraud at the Door:** Too many fake orders are getting into our system. It wastes our operational resources. We need to work with the IT and Payment teams to make the checkout process stricter. For example, we should require an OTP (One-Time Password) for suspicious accounts or high-value shopping carts before they can check out.
+* **Action 2 - Speed Up the Warehouse (Reduce Cancellations):** When customers cancel their own orders, it is usually because they are waiting too long. If an order sits in "Pending" or "Processing" for days, the customer gets frustrated and buys somewhere else. The solution here is to push the Warehouse team: they need to pick and pack orders much faster. A slow warehouse directly costs us sales.
