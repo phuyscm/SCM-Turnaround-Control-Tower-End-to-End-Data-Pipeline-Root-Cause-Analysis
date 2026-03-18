@@ -6,8 +6,11 @@
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/1c018db1-8e3c-4076-888c-8c3ed5e87cbf" width="49%" alt="SLA Control Tower" />
-  <img src="image" src="https://github.com/user-attachments/assets/e8281141-312b-4080-87b5-0ff476a16c56" width="49%" alt="Commercial Integrity" />
+  <img src="https://github.com/user-attachments/assets/0a4dee24-f0c4-4827-9b4c-80fb254c5c38" width="49%" alt="Commercial Integrity" />
 </p>
+
+<img width="1277" height="723" alt="image" src="" />
+
 
 ## Deep Dive: Critical Thinking & Problem Solving Log
 
