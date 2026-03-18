@@ -59,6 +59,9 @@ BI tools are powerful, but their default settings often defy business logic. My 
 * **The Technical Fix:** I layered the User Experience (UX). I kept the matrix visually clean—showing only pure OTIF percentages with Red/Green conditional formatting. However, I engineered the Tooltips to secretly carry the `[Total_Shipment_Volume]` and `[Sum of Sales]` metrics.
 * **The Impact:** Stakeholders can spot a "red zone" instantly, but upon hovering, they immediately see the financial weight of that failure, ensuring operational intervention is prioritized by actual revenue impact.
 
+<img width="515" height="192" alt="image" src="https://github.com/user-attachments/assets/a5f1d2c6-8757-4066-9d07-d182598f7a06" />
+
+
 #### 3. Isolating the Bottleneck (Decomposition Logic)
 * **The Problem:** A system-wide OTIF rate of 43% is too broad to act upon. 
 * **The Critical Thought:** Systemic failures are rarely truly global; they are usually localized bottlenecks masquerading as global issues due to aggregated data.
@@ -67,20 +70,20 @@ BI tools are powerful, but their default settings often defy business logic. My 
 
 <img width="1029" height="738" alt="image" src="https://github.com/user-attachments/assets/ccba1068-d1b5-4dec-a348-7d3490f22e3a" />
 
-##  Strategic Recommendations (Action Plan)
+## Strategic Recommendations (Action Plan)
 
 Finding the root cause is only half the job. Based on the dashboard data, here is my practical action plan to fix the delivery delays and stop the money leaks:
 
-### 1. Fixing the Late Deliveries (Central America - Standard Class)
-*The Data: Over 41% of all late deliveries come from the "Standard Class" shipping route to Central America.*
+### 1. Fixing the Late Deliveries (Central America Bottleneck)
+*The Data: The Decomposition Tree shows "Standard Class" drives the highest volume of late deliveries (over 41%). However, cross-referencing with the Heatmap Matrix reveals that simply upgrading orders to "Second Class" is not a silver bullet, as it also frequently underperforms (red zones).*
 
 **My Recommendations:**
-* **Action 1 - Hold the Vendor Accountable:** The problem is isolated to this specific route. We need to set up a meeting with the shipping vendor handling Central America right away. We must find out if they lack delivery trucks or if packages are just stuck at customs, and force them to meet the delivery deadlines.
-* **Action 2 - The Quick Backup Plan:** While we negotiate with the vendor, we still need to keep our customers happy. I suggest setting up an automatic rule: If a customer in Central America buys a bulky item (like sporting goods) and chooses "Standard" shipping, we automatically upgrade them to "Second Class" (faster shipping). We will lose a few dollars on shipping fees, but we deliver on time and save the customer relationship.
+* **Action 1 - Question the Whole Regional Network:** The Heatmap shows it's not just "Standard" shipping that fails; "Second Class" is also struggling in Central America. The whole region is a bottleneck. We need an urgent meeting with our shipping partners there to ask directly: "Are you short on trucks, or are packages stuck at customs?" and demand a real fix.
+* **Action 2 - Smart Upgrades (Don't Waste Money):** We shouldn't blindly pay more to upgrade an order to "Second Class" just because it's at risk. If "Second Class" is also failing, we just lose money and still deliver late. Instead, we should tell our system to look at the Heatmap: ONLY upgrade a shipping method if the new, faster option is actually showing a "Green" (good) success rate for that specific item. 
 
 ### 2. Stopping the Money Leaks (Fraud and Cancellations)
 *The Data: Looking at the bottom of the Funnel Chart, we lost about 4,000 orders to "Suspected Fraud" and another 4,000 because "Customers Canceled".*
 
 **My Recommendations:**
-* **Action 1 - Stop Fraud at the Door:** Too many fake orders are getting into our system. It wastes our operational resources. We need to work with the IT and Payment teams to make the checkout process stricter. For example, we should require an OTP (One-Time Password) for suspicious accounts or high-value shopping carts before they can check out.
-* **Action 2 - Speed Up the Warehouse (Reduce Cancellations):** When customers cancel their own orders, it is usually because they are waiting too long. If an order sits in "Pending" or "Processing" for days, the customer gets frustrated and buys somewhere else. The solution here is to push the Warehouse team: they need to pick and pack orders much faster. A slow warehouse directly costs us sales.
+* **Action 1 - Block Fake Orders at the Door:** We are wasting time processing fake orders only to cancel them later. We need to work with the IT and Payment teams to add a simple security step at checkout, like requiring an OTP (One-Time Password) for big orders or suspicious accounts. Block the bad data before it enters our system.
+* **Action 2 - Pack Faster to Stop Cancellations:** Customers usually cancel when they get tired of waiting. If an order is stuck in "Pending" or "Processing" for days, they will leave. The fix is straightforward: we need to push the Warehouse team to pick and pack orders much faster. A slow warehouse directly loses us real money.
